@@ -1,0 +1,25 @@
+/* styles.css – Portfolio theme for Julia Sepulveda */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root{
+  --bg:#fff;--fg:#111827;--accent:#0ea5a4;--muted:#6b7280;--card:#f9fafb;
+}
+[data-theme='dark']{
+  --bg:#0f172a;--fg:#f1f5f9;--accent:#38bdf8;--muted:#94a3b8;--card:#1e293b;
+}
+body{font-family:'Poppins',sans-serif;margin:0;background:var(--bg);color:var(--fg);padding-top:70px;}
+.header{position:fixed;top:0;width:100%;background:var(--card);display:flex;align-items:center;justify-content:space-between;padding:10px 20px;box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;}
+.logo{background:var(--accent);color:#fff;padding:8px 12px;border-radius:10px;}
+.nav a{margin:0 8px;text-decoration:none;color:var(--fg);font-weight:600;}
+.nav a.active{color:var(--accent);}
+.container{max-width:900px;margin:0 auto;padding:20px;}
+.hero-card{background:var(--card);padding:30px;border-radius:14px;box-shadow:0 5px 12px rgba(0,0,0,0.05);}
+.cta{background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.card{background:var(--card);border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,0.05);overflow:hidden;}
+.card img{width:100%;height:180px;object-fit:cover;}
+.card-body{padding:15px;}
+.footer{text-align:center;padding:20px 0;margin-top:40px;color:var(--muted);}
+.contact-form{display:grid;gap:10px;}
+.contact-form input,.contact-form textarea{padding:10px;border:1px solid #ccc;border-radius:8px;}
+.pill{background:var(--accent);color:white;padding:6px 10px;border-radius:10px;}
